@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 
 namespace GrillMaster.Infrastructure.Services
 {
+    /// <summary>
+    /// Resumen:
+    ///     Grill Menu Http Client
+    /// </summary>
     public class GrillMenuClient: IGrillMenuClient
     {
         private readonly HttpClient _client;
@@ -19,8 +23,11 @@ namespace GrillMaster.Infrastructure.Services
             client.DefaultRequestHeaders.Add("Accept", "application/json");
 
             _client = client;
-        }        
+        }
 
+        /// <summary>
+        /// Gets the menu grill collection.
+        /// </summary>
         public async Task<IEnumerable<GrillMenu>> GetAll()
         {
             var response = await _client.GetAsync("/api/GrillMenu");

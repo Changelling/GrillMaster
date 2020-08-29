@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 
 namespace GrillMaster.Application.GrillMenu.Commands.CalculateSchedule
 {
+    /// <summary>
+    /// Resumen:
+    ///     Obtains the optimum planning for grilling whole menu.
+    /// </summary>
     public class CalculateScheduleCommand : IRequest<GrillPlanning>
     {
         public IEnumerable<Domain.Entities.GrillMenu> Menus { get; set; }

@@ -27,6 +27,9 @@ namespace GrillMaster.Infrastructure.Services
             _mapper = mapper;
         }
 
+        /// <summary>
+        /// Obtains the optimum planning for grilling whole menu.
+        /// </summary>
         public async Task<MenuPlanning> Calculate(GrillMenu menu, Size grillSize)
         {
             MenuPlanning planning = new MenuPlanning() { Name = menu.Menu};

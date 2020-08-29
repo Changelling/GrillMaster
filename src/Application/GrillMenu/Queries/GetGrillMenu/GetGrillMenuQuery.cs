@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 
 namespace GrillMaster.Application.GrillMenu.Queries.GetGrillMenu
 {
+    /// <summary>
+    /// Resumen:
+    ///     Gets the menu grill collection.
+    /// </summary>
     public class GetGrillMenuQuery : IRequest<IEnumerable<Domain.Entities.GrillMenu>>
     {
     }

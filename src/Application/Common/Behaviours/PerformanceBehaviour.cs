@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace GrillMaster.Application.Common.Behaviours
 {
+    /// <summary>
+    /// Mediatr performance behaviour:
+    ///     Calculate the elapsed time in a query.
+    /// </summary>
     public class PerformanceBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     {
         private readonly Stopwatch _timer;

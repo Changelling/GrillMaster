@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace GrillMaster.Application.Common.Behaviours
 {
+    /// <summary>
+    /// Mediatr Unhandled Exception behaviour:
+    ///     Log the unhandled exeption in a request.
+    /// </summary>
     public class UnhandledExceptionBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     {
         private readonly ILogger<TRequest> _logger;

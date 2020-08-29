@@ -8,6 +8,10 @@ using ValidationException = GrillMaster.Application.Common.Exceptions.Validation
 
 namespace GrillMaster.Application.Common.Behaviours
 {
+    /// <summary>
+    /// Mediatr Validation behaviour:
+    ///     Validate all Request.
+    /// </summary>
     public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
         where TRequest : IRequest<TResponse>
     {
